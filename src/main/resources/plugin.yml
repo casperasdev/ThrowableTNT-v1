@@ -1,0 +1,29 @@
+name: ThrowableTNT
+version: 1.0.0
+description: A professional throwable TNT grenade plugin with customizable properties
+author: Server Admin
+main: com.throwabletnt.ThrowableTNTPlugin
+
+commands:
+  throwabletnt:
+    description: Main command for ThrowableTNT plugin
+    usage: /throwabletnt <subcommand>
+    aliases: [tnt]
+    permission: throwabletnt.command
+
+permissions:
+  throwabletnt.command:
+    description: Access to ThrowableTNT commands
+    default: op
+  throwabletnt.throw:
+    description: Permission to throw TNT grenades
+    default: true
+  throwabletnt.give:
+    description: Permission to use give command
+    default: op
+  throwabletnt.reload:
+    description: Permission to reload configuration
+    default: op
+  throwabletnt.cooldown.bypass:
+    description: Permission to bypass cooldowns
+    default: op

@@ -1,0 +1,123 @@
+# ThrowableTNT Configuration
+# Customize all aspects of the throwable TNT plugin
+
+# ===== TNT Item Settings =====
+tnt:
+  # Name displayed for the item in inventory
+  item-name: "&c&lThrowable TNT"
+
+  # Main lore customization - Edit this to customize TNT lore!
+  # Use %power% and %distance% for dynamic values
+  main-lore:
+    - "&7Power Level: &e%power%"
+    - "&7Distance: &e%distance%x"
+    - "&8Grenades explode on impact"
+
+  # Material used for the TNT item
+  material: "TNT"
+
+# ===== Explosion Settings =====
+explosion:
+  # Default explosion power (0.0 - 10.0 recommended range)
+  default-power: 4.0
+
+  # Minimum power allowed
+  min-power: 1.0
+
+  # Maximum power allowed
+  max-power: 10.0
+
+  # Default distance multiplier (velocity multiplier)
+  default-distance: 1.0
+
+  # Minimum distance allowed
+  min-distance: 0.5
+
+  # Maximum distance allowed
+  max-distance: 3.0
+
+  # Whether explosions break blocks
+  break-blocks: true
+
+  # Explosion radius multiplier
+  radius-multiplier: 1.0
+
+# ===== Particle Effects =====
+particles:
+  # Enable particle effects on explosion
+  enabled: true
+
+  # Smoke particle type (SMOKE, CAMPFIRE_COSY_SMOKE, etc.)
+  smoke-type: "SMOKE"
+
+  # Number of smoke particles to spawn
+  smoke-count: 30
+
+  # Enable projectile trail (particles following the TNT)
+  projectile-trail: true
+
+  # Trail particle type
+  trail-type: "SMOKE"
+
+  # Trail particle count per tick
+  trail-count: 3
+
+# ===== Sound Effects =====
+sounds:
+  # Enable sound effects
+  enabled: true
+
+  # Sound when TNT is thrown (entity.snowball.throw, entity.ender_pearl.throw, etc.)
+  throw-sound: "entity.snowball.throw"
+
+  # Sound volume for throw (0.0 - 1.0)
+  throw-volume: 0.7
+
+  # Sound pitch for throw (0.5 - 2.0)
+  throw-pitch: 1.0
+
+  # Sound when explosion occurs
+  explosion-sound: "entity.generic.explode"
+
+  # Sound volume for explosion
+  explosion-volume: 1.0
+
+  # Sound pitch for explosion
+  explosion-pitch: 1.0
+
+# ===== Cooldown Settings =====
+cooldown:
+  # Cooldown duration in seconds
+  duration: 3
+
+  # Show remaining cooldown in action bar
+  show-action-bar: true
+
+# ===== Command Messages =====
+messages:
+  # Success message when giving TNT
+  give-success: "&aGave &b%player% &ax%amount% &cThrowable TNT &a(Power: &e%power%&a, Distance: &e%distance%x&a)"
+
+  # Error message for invalid player
+  invalid-player: "&cPlayer not found: %player%"
+
+  # Error message for out of range power
+  invalid-power: "&cPower must be between %min% and %max%"
+
+  # Error message for out of range distance
+  invalid-distance: "&cDistance must be between %min% and %max%"
+
+  # Cooldown message
+  cooldown-message: "&cWait %remaining% seconds before throwing another TNT"
+
+  # Successful throw message
+  throw-success: "&aYou threw a TNT grenade!"
+
+  # Configuration reloaded message
+  config-reloaded: "&aConfiguration reloaded successfully!"
+
+  # Permission denied message
+  no-permission: "&cYou don't have permission to do this"
+
+# ===== Debug Settings =====
+debug: false
